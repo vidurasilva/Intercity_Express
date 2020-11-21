@@ -1,3 +1,4 @@
+import 'package:Intercity_Express/notifire/bus_path.dart';
 import 'package:Intercity_Express/route/route.dart';
 import 'package:Intercity_Express/store/store.dart';
 import 'package:Intercity_Express/theme/theme.dart';
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context) => Store(),
+      create: (context) => BussPath(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Provider Example',
