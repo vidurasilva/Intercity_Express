@@ -1,3 +1,4 @@
+import 'package:Intercity_Express/notifire/bus_path.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:Intercity_Express/store/store.dart';
@@ -5,7 +6,7 @@ import 'package:Intercity_Express/store/store.dart';
 class CartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var store = Provider.of<Store>(context);
+    var store = Provider.of<BussPath>(context);
     GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
     return Scaffold(
