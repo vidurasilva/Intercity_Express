@@ -26,34 +26,77 @@ class _IndexPageState extends State<IndexPage> {
                     children: <Widget>[
                       Container(
                         height: 50.0,
-                        width: 350,
+                        width: 330,
                         color: textAreaPurpal,
-                        child: RichText(
-                          text: TextSpan(
-                              text: "Welcome to the ",
+                        child: Center(
+                          child: RichText(
+                            text: TextSpan(
+                              text: "INTERCITY ",
                               style: TextStyle(
-                                  color: textBlack,
-                                  fontFamily: 'Apple',
+                                  fontWeight: FontWeight.bold,
+                                  color: textWhite,
+                                  fontStyle: FontStyle.italic,
+                                  //fontFamily: 'Apple',
                                   fontSize: 20.0,
-                                  decoration: TextDecoration.none)),
+                                  decoration: TextDecoration.none),
+                              children: <TextSpan>[
+                                TextSpan(
+                                    text: 'Express',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: textYellow,
+                                        fontStyle: FontStyle.italic,
+                                        fontFamily: 'Apple',
+                                        fontSize: 20.0,
+                                        decoration: TextDecoration.none)),
+                                // TextSpan(
+                                //     text: ' world!',
+                                //     style: TextStyle(
+                                //         fontWeight: FontWeight.bold,
+                                //         color: textWhite,
+                                //         fontFamily: 'Apple',
+                                //         fontSize: 20.0,
+                                //         decoration: TextDecoration.none)),
+                              ],
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
                         ),
                       ),
                       Container(
+                        height: 50.0,
+                        width: 50,
                         color: Colors.blue,
-                        child: RichText(
-                          text: TextSpan(
-                              text: "Bus",
-                              style: TextStyle(
-                                  color: textBlack,
-                                  fontFamily: 'Apple',
-                                  fontSize: 20.0,
-                                  decoration: TextDecoration.none)),
+                        child: Center(
+                          child: RichText(
+                            text: TextSpan(
+                                text: "Bus",
+                                style: TextStyle(
+                                    color: textWhite,
+                                    fontFamily: 'Apple',
+                                    fontSize: 20.0,
+                                    decoration: TextDecoration.none)),
+                            textAlign: TextAlign.center,
+                          ),
                         ),
                       ),
                     ],
                   ),
                 ),
               ),
+              Container(
+                  //color: buttonPurpal,
+                  child: Center(
+                      child: FlatButton(
+                          color: buttonPurpal,
+                          onPressed: null,
+                          child: Text('Find Bus',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: textBlack,
+                                  fontFamily: 'Apple',
+                                  fontSize: 20.0,
+                                  decoration: TextDecoration.none))))),
               Expanded(
                   child: ButtonBar(
                 children: <Widget>[
