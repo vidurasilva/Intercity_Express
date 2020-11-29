@@ -8,7 +8,7 @@ import '../screens/splash_page.dart';
 
 Map<String, Widget Function(BuildContext)> routes = {
   '/splash': (context) => SplashPage(),
-  '/index': (context) => IndexPage(),
+  '/': (context) => IndexPage(),
   '/productList': (context) => ProductListScreen(),
   '/cart': (context) => CartScreen(),
   '/profile': (context) => UserScreen(),
