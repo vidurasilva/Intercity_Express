@@ -88,15 +88,23 @@ class _IndexPageState extends State<IndexPage> {
                   //color: buttonPurpal,
                   child: Center(
                       child: FlatButton(
-                          color: buttonPurpal,
+                          color: Colors.blue,
+                          textColor: Colors.white,
+                          disabledColor: buttonPurpal,
+                          disabledTextColor: Colors.black,
+                          padding: EdgeInsets.all(8.0),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                              side: BorderSide(color: Colors.red)),
+                          splashColor: Colors.blueAccent,
                           onPressed: null,
                           child: Text('Find Bus',
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: textBlack,
-                                  fontFamily: 'Apple',
-                                  fontSize: 20.0,
-                                  decoration: TextDecoration.none))))),
+                                  // fontFamily: 'Apple',
+                                  // fontSize: 20.0,
+                                  // decoration: TextDecoration.none))))),
               Expanded(
                   child: ButtonBar(
                 children: <Widget>[
