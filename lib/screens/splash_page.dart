@@ -12,7 +12,7 @@ class _SplashPageState extends State<SplashPage> {
     super.initState();
     Future.delayed(Duration(seconds: 2), () {
       onPressed:
-      Navigator.pushNamed(context, '/index');
+      Navigator.pushNamed(context, '/');
     });
   }
 
