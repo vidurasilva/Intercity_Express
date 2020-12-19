@@ -109,7 +109,7 @@ class _IndexPageState extends State<IndexPage> {
                   child: ButtonBar(
                 children: <Widget>[
                   FlatButton(
-                    child: Text('Product List'),
+                    child: Text('Product List new'),
                     color: Colors.blue,
                     onPressed: () {
                       Navigator.pushNamed(context, '/productList');
